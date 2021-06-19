@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarMainActivity">
+
+    <ImageButton
+        android:id="@+id/ambulance_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/firetruck_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bicycle_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/ambulance" />
+
+    <TextView
+        android:id="@+id/ambulance_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="救護車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bicycle_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ambulance_btn" />
+
+    <ImageButton
+        android:id="@+id/bicycle_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/bus_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ambulance_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        app:srcCompat="@drawable/bicycle" />
+
+    <TextView
+        android:id="@+id/bicycle_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="腳踏車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bus_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ambulance_btn"
+        app:layout_constraintTop_toBottomOf="@+id/bicycle_btn" />
+
+    <ImageButton
+        android:id="@+id/bus_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/whitecar_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bicycle_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392"
+        app:srcCompat="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/bus_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="公車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/whitecar_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bicycle_text"
+        app:layout_constraintTop_toBottomOf="@+id/bus_btn" />
+
+    <ImageButton
+        android:id="@+id/firetruck_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/motorcycle_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/firetruck" />
+
+    <TextView
+        android:id="@+id/firetruck_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="消防車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/motorcycle_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firetruck_btn" />
+
+    <ImageButton
+        android:id="@+id/police_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/taxi_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/motorcycle_btn"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/police" />
+
+    <TextView
+        android:id="@+id/police_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="警察車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/taxi_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/motorcycle_text"
+        app:layout_constraintTop_toBottomOf="@+id/police_btn" />
+
+    <ImageButton
+        android:id="@+id/taxi_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/police_btn"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/taxi" />
+
+    <TextView
+        android:id="@+id/taxi_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="計程車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/police_text"
+        app:layout_constraintTop_toBottomOf="@+id/taxi_btn" />
+
+    <ImageButton
+        android:id="@+id/motorcycle_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/police_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firetruck_btn"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/motorcycle" />
+
+    <TextView
+        android:id="@+id/motorcycle_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="摩托車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/police_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firetruck_text"
+        app:layout_constraintTop_toBottomOf="@+id/motorcycle_btn" />
+
+    <ImageButton
+        android:id="@+id/whitecar_btn"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bus_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/whitecar" />
+
+    <TextView
+        android:id="@+id/whitecar_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="轎車"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bus_text"
+        app:layout_constraintTop_toBottomOf="@+id/whitecar_btn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="154dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
